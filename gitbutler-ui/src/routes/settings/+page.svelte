@@ -48,7 +48,9 @@
 	let loaded = false;
 	$: if ($user$ && !loaded) {
 		loaded = true;
+		console.log($user$);
 		cloud.user.get($user$?.access_token).then((cloudUser) => {
+			console.log(cloudUser);
 			cloudUser.github_access_token = $user$?.github_access_token; // prevent overwriting with null
 			userService.setUser(cloudUser);
 		});
