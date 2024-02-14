@@ -81,7 +81,7 @@ GitButler is a [Tauri](https://tauri.app/)-based application. Its UI is written 
 - **Commit Signing**
   - Easy commit signing with our generated SSH key
 
-## Example uses
+## Example uses.
 
 ### Fixing a bug while working on a feature
 
